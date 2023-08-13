@@ -1,6 +1,6 @@
-# spanish-colemak-qwerty-macos
+# multilingual-colemak-qwerty-macos
 
-Keyboard layout for macOS that is Colemak for typing letters, and can be used to type Spanish, French, Portuguese, German, Hungarian, Italian, Dutch, Danish, Norwegian, Swedish, Polish, Czech, Croatian, Slovak, Slovenian, and Pinyin as well.
+Keyboard layout for macOS that is Colemak for typing letters, and can be used to type Spanish, French, Portuguese, German, Hungarian, Italian, Dutch, Danish, Norwegian, Swedish, Icelandic, Polish, Czech, Croatian, Slovak, Slovenian, and Pinyin as well.
 
 This layout behaves like QWERTY when typing shortcuts. Ie, your usual shortcuts like command-T, command-F will all work with the same QWERTY locations you are used to.
 
@@ -44,6 +44,11 @@ This layout behaves like QWERTY when typing shortcuts. Ie, your usual shortcuts 
 * `ø` = `;do`
 * `å` = `;dr`
 
+### Icelandic
+
+* `þ` = `;dt`
+* `ð` = `;ds`
+
 ### Dutch / Nederlands
 
 * `ĳ` = `;dj`
@@ -64,7 +69,7 @@ This layout behaves like QWERTY when typing shortcuts. Ie, your usual shortcuts 
 
 ### Croatian / Hrvatski
 
-* `ć` = `;/c`
+* `ć` = `;gc`
 * `đ` = `;dd`
 
 ### Czech / Čeština
@@ -85,9 +90,9 @@ This layout behaves like QWERTY when typing shortcuts. Ie, your usual shortcuts 
 * `ę` = `;ze`
 * `ł` = `;dl`
 * `ż` = `;dz`
-* `ń` = `;/n`
-* `ś` = `;/s`
-* `ź` = `;/z`
+* `ń` = `;gn`
+* `ś` = `;gs`
+* `ź` = `;gz`
 
 ### Pinyin
 
@@ -95,7 +100,7 @@ This layout behaves like QWERTY when typing shortcuts. Ie, your usual shortcuts 
 * `ǚ` = `;hv`
 * `ā` = `;ma`
 * `ǖ` = `;mv`
-* `ǘ` = `;/v`
+* `ǘ` = `;gv`
 * `ǜ` = `;tv`
 
 ### Punctuation, non-accented characters, uppercase, colemak
@@ -104,9 +109,9 @@ Non-accented characters can be typed as usual. To type `;` itself, use `;;`. For
 
 ## Install
 
-Place the file `spanish-colemak-qwerty.keylayout` in the directory `/Users/geza/Library/Keyboard Layouts` (replacing `geza` with your username)
+Place the file `multilingual-colemak-qwerty.keylayout` in the directory `/Users/geza/Library/Keyboard Layouts` (replacing `geza` with your username)
 
-Then logout and log back in. Open the keyboard preferences, go to other languages, and select `Spanish Colemak - Qwerty`
+Then logout and log back in. Open the keyboard preferences, go to other languages, and select `Multilingual Colemak - Qwerty`
 
 ## Other versions
 

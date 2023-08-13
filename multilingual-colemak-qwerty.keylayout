@@ -1,8 +1,8 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 3.3.0.249 on 2019-03-23 at 23:15 (PDT)-->
-<!--Last edited by Ukelele version 3.4.2.314 on 2023-08-12 at 21:06 (PDT)-->
-<keyboard group="126" id="-21677" name="Spanish Colemak - Qwerty ⌘" maxout="1">
+<!--Last edited by Ukelele version 3.4.2.314 on 2023-08-12 at 21:34 (PDT)-->
+<keyboard group="126" id="-4443" name="Multilingual Colemak - Qwerty ⌘" maxout="1">
     <layouts>
         <layout first="0" last="17" mapSet="ANSI" modifiers="Modifiers"/>
         <layout first="18" last="18" mapSet="JIS" modifiers="Modifiers"/>
@@ -63,7 +63,7 @@
             <key code="8" action="c"/>
             <key code="9" action="v"/>
             <key code="11" action="b"/>
-            <key code="12" output="q"/>
+            <key code="12" action="q"/>
             <key code="13" action="w"/>
             <key code="14" action="f"/>
             <key code="15" action="p"/>
@@ -95,7 +95,7 @@
             <key code="41" action="o"/>
             <key code="42" output="\"/>
             <key code="43" output=","/>
-            <key code="44" action="/"/>
+            <key code="44" action="/ 2"/>
             <key code="45" output="k"/>
             <key code="46" action="m"/>
             <key code="47" output="."/>
@@ -973,6 +973,13 @@
             <when state="none" output="/"/>
             <when state="accent" next="upaccent"/>
         </action>
+        <action id="/ 1">
+            <when state="none" output="/"/>
+            <when state="accent" next="upaccent"/>
+        </action>
+        <action id="/ 2">
+            <when state="none" output="/"/>
+        </action>
         <action id=";">
             <when state="none" next="accent"/>
             <when state="accent" output=";"/>
@@ -1029,6 +1036,7 @@
         <action id="G">
             <when state="none" output="G"/>
             <when state="caron" output="Ğ"/>
+            <when state="upaccent" output="Ǵ"/>
         </action>
         <action id="I">
             <when state="none" output="I"/>
@@ -1090,6 +1098,7 @@
             <when state="none" output="T"/>
             <when state="caron" output="Ť"/>
             <when state="cedilla" output="Ţ"/>
+            <when state="ligature" output="Þ"/>
         </action>
         <action id="U">
             <when state="none" output="U"/>
@@ -1176,7 +1185,9 @@
         </action>
         <action id="g">
             <when state="none" output="g"/>
+            <when state="accent" next="upaccent"/>
             <when state="caron" output="ğ"/>
+            <when state="upaccent" output="ǵ"/>
         </action>
         <action id="h">
             <when state="none" output="h"/>
@@ -1229,6 +1240,9 @@
             <when state="none" output="p"/>
             <when state="accent" output="ä"/>
         </action>
+        <action id="q">
+            <when state="none" output="q"/>
+        </action>
         <action id="r">
             <when state="none" output="r"/>
             <when state="accent" output="ü"/>
@@ -1248,6 +1262,7 @@
             <when state="accent" next="grave"/>
             <when state="caron" output="ť"/>
             <when state="cedilla" output="ţ"/>
+            <when state="ligature" output="þ"/>
         </action>
         <action id="u">
             <when state="none" output="u"/>
