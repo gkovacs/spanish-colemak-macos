@@ -1,6 +1,6 @@
-# multilingual-colemak-qwerty-macos
+# magyar-colemak-macos
 
-Keyboard layout for macOS that is Colemak for typing letters, and can be used to type Spanish, French, Portuguese, German, Hungarian, Italian, Dutch, Danish, Norwegian, Swedish, Icelandic, Polish, Czech, Croatian, Slovak, Slovenian, and Pinyin as well.
+Multilingual keyboard layout for macOS that is Colemak for typing letters, optimized for Spanish, German, and Hungarian, and can be used to type French, Portuguese, Italian, Dutch, Danish, Norwegian, Swedish, Icelandic, Polish, Czech, Croatian, Slovak, Slovenian, and Pinyin as well.
 
 This layout behaves like QWERTY when typing shortcuts. Ie, your usual shortcuts like command-T, command-F will all work with the same QWERTY locations you are used to.
 
@@ -13,6 +13,18 @@ This layout behaves like QWERTY when typing shortcuts. Ie, your usual shortcuts 
 * `ú` = `;u`
 * `ý` = `;y`
 * `ñ` = `;n`
+
+### German / Deutsch
+
+* `ß` = `;b`
+* `ö` = `;s`
+* `ü` = `;r`
+* `ä` = `;p`
+
+### Hungarian / Magyar
+
+* `ő` = `;f`
+* `ű` = `;w`
 
 ### French / Français
 
@@ -27,24 +39,12 @@ This layout behaves like QWERTY when typing shortcuts. Ie, your usual shortcuts 
 
 * Letters with tilde: `ã` = `;xa`
 
-### German / Deutsch
-
-* `ß` = `;b`
-* `ö` = `;s`
-* `ü` = `;r`
-* `ä` = `;p`
-
-### Hungarian / Magyar
-
-* `ő` = `;f`
-* `ű` = `;w` (both qwerty and colemak)
-
 ### Norwegian / Norsk
 
 * `ø` = `;do`
 * `å` = `;dr`
 
-### Icelandic
+### Icelandic / Íslenska
 
 * `þ` = `;dt`
 * `ð` = `;ds`
@@ -109,9 +109,9 @@ Non-accented characters can be typed as usual. To type `;` itself, use `;;`. For
 
 ## Install
 
-Place the file `multilingual-colemak-qwerty.keylayout` in the directory `/Users/geza/Library/Keyboard Layouts` (replacing `geza` with your username)
+Place the file `magyar-colemak.keylayout` in the directory `/Users/geza/Library/Keyboard Layouts` (replacing `geza` with your username)
 
-Then logout and log back in. Open the keyboard preferences, go to other languages, and select `Multilingual Colemak - Qwerty`
+Then logout and log back in. Open the keyboard preferences, go to other languages, and select `Magyar Colemak`
 
 ## Other versions
 
