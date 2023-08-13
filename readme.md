@@ -39,7 +39,7 @@ This layout behaves like QWERTY when typing shortcuts. Ie, your usual shortcuts 
 
 ### Punctuation, non-accented characters, uppercase, colemak
 
-Non-accented characters can be typed as usual. To type `;` itself, use `;;`. For uppercase characters, replace the last character with uppercase. So `Á` = `;A`, `À` = `;fA`
+Non-accented characters can be typed as usual. To type `;` itself, use `;;`. For uppercase characters, replace the last character with uppercase. So `Á` = `;A`, `À` = `;tA`
 
 ## Install
 
