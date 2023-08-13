@@ -1,6 +1,6 @@
-# Magyar Colemak macOS for Spanish, German, and Hungarian
+# Spanish/German/Magyar Colemak macOS
 
-Multilingual keyboard layout for macOS that is Colemak for typing letters, optimized for Spanish, German, and Hungarian, and can be used to type French, Portuguese, Italian, Dutch, Danish, Norwegian, Swedish, Icelandic, Polish, Czech, Croatian, Slovak, Slovenian, and Pinyin as well.
+Multilingual macOS colemak keyboard layout optimized for Spanish, German, and Hungarian, and supports French, Portuguese, Italian, Dutch, Danish, Norwegian, Swedish, Icelandic, Polish, Czech, Croatian, Slovak, Slovenian, and Pinyin as well.
 
 This layout behaves like QWERTY when typing shortcuts. Ie, your usual shortcuts like command-T, command-F will all work with the same QWERTY locations you are used to.
 
