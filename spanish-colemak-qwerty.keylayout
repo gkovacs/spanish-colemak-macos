@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 3.3.0.249 on 2019-03-23 at 23:15 (PDT)-->
-<!--Last edited by Ukelele version 3.4.2.314 on 2023-08-12 at 18:29 (PDT)-->
+<!--Last edited by Ukelele version 3.4.2.314 on 2023-08-12 at 20:52 (PDT)-->
 <keyboard group="126" id="-20660" name="Spanish Colemak - Qwerty ⌘" maxout="1">
     <layouts>
         <layout first="0" last="17" mapSet="ANSI" modifiers="Modifiers"/>
@@ -56,9 +56,9 @@
             <key code="1" action="r"/>
             <key code="2" action="s"/>
             <key code="3" action="t"/>
-            <key code="4" output="h"/>
+            <key code="4" action="h"/>
             <key code="5" action="d 1"/>
-            <key code="6" output="z"/>
+            <key code="6" action="z"/>
             <key code="7" action="x"/>
             <key code="8" action="c"/>
             <key code="9" action="v"/>
@@ -67,8 +67,8 @@
             <key code="13" action="w"/>
             <key code="14" action="f"/>
             <key code="15" action="p"/>
-            <key code="16" output="j"/>
-            <key code="17" output="g"/>
+            <key code="16" action="j"/>
+            <key code="17" action="g"/>
             <key code="18" output="1"/>
             <key code="19" output="2"/>
             <key code="20" output="3"/>
@@ -95,9 +95,9 @@
             <key code="41" action="o"/>
             <key code="42" output="\"/>
             <key code="43" output=","/>
-            <key code="44" output="/"/>
+            <key code="44" action="/"/>
             <key code="45" output="k"/>
-            <key code="46" output="m"/>
+            <key code="46" action="m"/>
             <key code="47" output="."/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=" "/>
@@ -159,20 +159,20 @@
             <key code="0" action="A"/>
             <key code="1" action="R"/>
             <key code="2" action="S"/>
-            <key code="3" output="T"/>
+            <key code="3" action="T"/>
             <key code="4" output="H"/>
-            <key code="5" output="D"/>
-            <key code="6" output="Z"/>
+            <key code="5" action="D"/>
+            <key code="6" action="Z"/>
             <key code="7" output="X"/>
             <key code="8" action="C"/>
-            <key code="9" output="V"/>
+            <key code="9" action="V"/>
             <key code="11" action="B"/>
             <key code="12" output="Q"/>
             <key code="13" action="W"/>
             <key code="14" action="F"/>
             <key code="15" action="P"/>
             <key code="16" output="J"/>
-            <key code="17" output="G"/>
+            <key code="17" action="G"/>
             <key code="18" output="!"/>
             <key code="19" output="@"/>
             <key code="20" output="#"/>
@@ -187,7 +187,7 @@
             <key code="29" output=")"/>
             <key code="30" output="}"/>
             <key code="31" action="Y"/>
-            <key code="32" output="L"/>
+            <key code="32" action="L"/>
             <key code="33" output="{"/>
             <key code="34" action="U"/>
             <key code="35" output=":"/>
@@ -969,6 +969,10 @@
         </keyMap>
     </keyMapSet>
     <actions>
+        <action id="/">
+            <when state="none" output="/"/>
+            <when state="accent" next="upaccent"/>
+        </action>
         <action id=";">
             <when state="none" next="accent"/>
             <when state="accent" output=";"/>
@@ -980,11 +984,15 @@
         <action id="A">
             <when state="none" output="A"/>
             <when state="accent" output="Á"/>
+            <when state="caron" output="Ǎ"/>
+            <when state="cedilla" output="Ą"/>
             <when state="circumflex" output="Â"/>
             <when state="grave" output="À"/>
             <when state="ligature" output="Æ"/>
+            <when state="macron" output="Ā"/>
             <when state="tilde" output="Ã"/>
             <when state="umlaut" output="Ä"/>
+            <when state="upaccent" output="Á"/>
         </action>
         <action id="B">
             <when state="none" output="B"/>
@@ -993,37 +1001,67 @@
         <action id="C">
             <when state="none" output="C"/>
             <when state="accent" output="Ç"/>
+            <when state="caron" output="Č"/>
+            <when state="cedilla" output="Ç"/>
+            <when state="upaccent" output="Ć"/>
+        </action>
+        <action id="D">
+            <when state="none" output="D"/>
+            <when state="caron" output="Ď"/>
+            <when state="ligature" output="Đ"/>
         </action>
         <action id="E">
             <when state="none" output="E"/>
             <when state="accent" output="É"/>
+            <when state="caron" output="Ě"/>
+            <when state="cedilla" output="Ę"/>
             <when state="circumflex" output="Ê"/>
             <when state="grave" output="È"/>
+            <when state="ligature" output="Œ"/>
+            <when state="macron" output="Ē"/>
             <when state="umlaut" output="Ë"/>
+            <when state="upaccent" output="É"/>
         </action>
         <action id="F">
             <when state="none" output="F"/>
             <when state="accent" output="Ő"/>
         </action>
+        <action id="G">
+            <when state="none" output="G"/>
+            <when state="caron" output="Ğ"/>
+        </action>
         <action id="I">
             <when state="none" output="I"/>
             <when state="accent" output="Í"/>
+            <when state="caron" output="Ǐ"/>
             <when state="circumflex" output="Î"/>
             <when state="grave" output="Ì"/>
+            <when state="ligature" output="İ"/>
+            <when state="macron" output="Ī"/>
             <when state="umlaut" output="Ï"/>
+            <when state="upaccent" output="Í"/>
+        </action>
+        <action id="L">
+            <when state="none" output="L"/>
+            <when state="caron" output="Ľ"/>
         </action>
         <action id="N">
             <when state="none" output="N"/>
             <when state="accent" output="Ñ"/>
+            <when state="caron" output="Ň"/>
+            <when state="upaccent" output="Ń"/>
         </action>
         <action id="O">
             <when state="none" output="O"/>
             <when state="accent" output="Ó"/>
+            <when state="caron" output="Ǒ"/>
             <when state="circumflex" output="Ô"/>
             <when state="grave" output="Ò"/>
-            <when state="ligature" output="Œ"/>
+            <when state="ligature" output="Ø"/>
+            <when state="macron" output="Ō"/>
             <when state="tilde" output="Õ"/>
             <when state="umlaut" output="Ö"/>
+            <when state="upaccent" output="Ó"/>
         </action>
         <action id="P">
             <when state="none" output="P"/>
@@ -1032,17 +1070,39 @@
         <action id="R">
             <when state="none" output="R"/>
             <when state="accent" output="Ü"/>
+            <when state="caron" output="Ř"/>
+            <when state="ligature" output="Å"/>
+            <when state="upaccent" output="Ŕ"/>
         </action>
         <action id="S">
             <when state="none" output="S"/>
             <when state="accent" output="Ö"/>
+            <when state="caron" output="Š"/>
+            <when state="cedilla" output="Ş"/>
+            <when state="upaccent" output="Ś"/>
+        </action>
+        <action id="T">
+            <when state="none" output="T"/>
+            <when state="caron" output="Ť"/>
+            <when state="cedilla" output="Ţ"/>
         </action>
         <action id="U">
             <when state="none" output="U"/>
             <when state="accent" output="Ú"/>
+            <when state="caron" output="Ǔ"/>
             <when state="circumflex" output="Û"/>
             <when state="grave" output="Ù"/>
+            <when state="ligature" output="Ů"/>
+            <when state="macron" output="Ū"/>
             <when state="umlaut" output="Ü"/>
+            <when state="upaccent" output="Ú"/>
+        </action>
+        <action id="V">
+            <when state="none" output="V"/>
+            <when state="caron" output="Ǚ"/>
+            <when state="grave" output="Ǜ"/>
+            <when state="macron" output="Ǖ"/>
+            <when state="upaccent" output="Ǘ"/>
         </action>
         <action id="W">
             <when state="none" output="W"/>
@@ -1053,15 +1113,24 @@
             <when state="accent" output="Ý"/>
             <when state="grave" output="Ỳ"/>
             <when state="umlaut" output="Ÿ"/>
+            <when state="upaccent" output="Ý"/>
+        </action>
+        <action id="Z">
+            <when state="none" output="Z"/>
+            <when state="upaccent" output="Ź"/>
         </action>
         <action id="a">
             <when state="none" output="a"/>
             <when state="accent" output="á"/>
+            <when state="caron" output="ǎ"/>
+            <when state="cedilla" output="ą"/>
             <when state="circumflex" output="â"/>
             <when state="grave" output="à"/>
             <when state="ligature" output="æ"/>
+            <when state="macron" output="ā"/>
             <when state="tilde" output="ã"/>
             <when state="umlaut" output="ä"/>
+            <when state="upaccent" output="á"/>
         </action>
         <action id="b">
             <when state="none" output="b"/>
@@ -1070,6 +1139,9 @@
         <action id="c">
             <when state="none" output="c"/>
             <when state="accent" output="ç"/>
+            <when state="caron" output="č"/>
+            <when state="cedilla" output="ç"/>
+            <when state="upaccent" output="ć"/>
         </action>
         <action id="d">
             <when state="none" output="d"/>
@@ -1078,41 +1150,75 @@
         <action id="d 1">
             <when state="none" output="d"/>
             <when state="accent" next="ligature"/>
+            <when state="caron" output="ď"/>
+            <when state="ligature" output="đ"/>
         </action>
         <action id="e">
             <when state="none" output="e"/>
             <when state="accent" output="é"/>
+            <when state="caron" output="ě"/>
+            <when state="cedilla" output="ę"/>
             <when state="circumflex" output="ê"/>
             <when state="grave" output="è"/>
+            <when state="ligature" output="œ"/>
+            <when state="macron" output="ē"/>
             <when state="umlaut" output="ë"/>
+            <when state="upaccent" output="é"/>
         </action>
         <action id="f">
             <when state="none" output="f"/>
             <when state="accent" output="ő"/>
         </action>
+        <action id="g">
+            <when state="none" output="g"/>
+            <when state="caron" output="ğ"/>
+        </action>
+        <action id="h">
+            <when state="none" output="h"/>
+            <when state="accent" next="caron"/>
+        </action>
         <action id="i">
             <when state="none" output="i"/>
             <when state="accent" output="í"/>
+            <when state="caron" output="ǐ"/>
             <when state="circumflex" output="î"/>
             <when state="grave" output="ì"/>
+            <when state="ligature" output="ı"/>
+            <when state="macron" output="ī"/>
             <when state="umlaut" output="ï"/>
+            <when state="upaccent" output="í"/>
+        </action>
+        <action id="j">
+            <when state="none" output="j"/>
+            <when state="ligature" output="ĳ"/>
         </action>
         <action id="l">
             <when state="none" output="l"/>
             <when state="accent" next="circumflex"/>
+            <when state="caron" output="ľ"/>
+            <when state="ligature" output="ł"/>
+        </action>
+        <action id="m">
+            <when state="none" output="m"/>
+            <when state="accent" next="macron"/>
         </action>
         <action id="n">
             <when state="none" output="n"/>
             <when state="accent" output="ñ"/>
+            <when state="caron" output="ň"/>
+            <when state="upaccent" output="ń"/>
         </action>
         <action id="o">
             <when state="none" output="o"/>
             <when state="accent" output="ó"/>
+            <when state="caron" output="ǒ"/>
             <when state="circumflex" output="ô"/>
             <when state="grave" output="ò"/>
-            <when state="ligature" output="œ"/>
+            <when state="ligature" output="ø"/>
+            <when state="macron" output="ō"/>
             <when state="tilde" output="õ"/>
             <when state="umlaut" output="ö"/>
+            <when state="upaccent" output="ó"/>
         </action>
         <action id="p">
             <when state="none" output="p"/>
@@ -1121,25 +1227,41 @@
         <action id="r">
             <when state="none" output="r"/>
             <when state="accent" output="ü"/>
+            <when state="caron" output="ř"/>
+            <when state="ligature" output="å"/>
+            <when state="upaccent" output="ŕ"/>
         </action>
         <action id="s">
             <when state="none" output="s"/>
             <when state="accent" output="ö"/>
+            <when state="caron" output="š"/>
+            <when state="cedilla" output="ş"/>
+            <when state="upaccent" output="ś"/>
         </action>
         <action id="t">
             <when state="none" output="t"/>
             <when state="accent" next="grave"/>
+            <when state="caron" output="ť"/>
+            <when state="cedilla" output="ţ"/>
         </action>
         <action id="u">
             <when state="none" output="u"/>
             <when state="accent" output="ú"/>
+            <when state="caron" output="ǔ"/>
             <when state="circumflex" output="û"/>
             <when state="grave" output="ù"/>
+            <when state="ligature" output="ů"/>
+            <when state="macron" output="ū"/>
             <when state="umlaut" output="ü"/>
+            <when state="upaccent" output="ú"/>
         </action>
         <action id="v">
             <when state="none" output="v"/>
             <when state="accent" next="umlaut"/>
+            <when state="caron" output="ǚ"/>
+            <when state="grave" output="ǜ"/>
+            <when state="macron" output="ǖ"/>
+            <when state="upaccent" output="ǘ"/>
         </action>
         <action id="w">
             <when state="none" output="w"/>
@@ -1154,14 +1276,24 @@
             <when state="accent" output="ý"/>
             <when state="grave" output="ỳ"/>
             <when state="umlaut" output="ÿ"/>
+            <when state="upaccent" output="ý"/>
+        </action>
+        <action id="z">
+            <when state="none" output="z"/>
+            <when state="accent" next="cedilla"/>
+            <when state="upaccent" output="ź"/>
         </action>
     </actions>
     <terminators>
         <when state="accent" output=""/>
+        <when state="caron" output=""/>
+        <when state="cedilla" output=""/>
         <when state="circumflex" output=""/>
         <when state="grave" output=""/>
         <when state="ligature" output=""/>
+        <when state="macron" output=""/>
         <when state="tilde" output=""/>
         <when state="umlaut" output=""/>
+        <when state="upaccent" output=""/>
     </terminators>
 </keyboard>

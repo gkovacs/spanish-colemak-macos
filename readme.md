@@ -1,6 +1,6 @@
 # spanish-colemak-qwerty-macos
 
-Keyboard layout for macOS that is Colemak for typing letters, but can be used to type Spanish, French, Portuguese, German, and Hungarian as well.
+Keyboard layout for macOS that is Colemak for typing letters, and can be used to type Spanish, French, Portuguese, German, Hungarian, Italian, Dutch, Danish, Norwegian, Swedish, Polish, Czech, Croatian, Slovak, Slovenian, and Pinyin as well.
 
 This layout behaves like QWERTY when typing shortcuts. Ie, your usual shortcuts like command-T, command-F will all work with the same QWERTY locations you are used to.
 
@@ -20,6 +20,8 @@ This layout behaves like QWERTY when typing shortcuts. Ie, your usual shortcuts 
 * Letters with grave: `à` = `;ta`
 * Letters with circumflex: `â` = `;la`
 * Letters with umlaut: `ë` = `;ve`
+* `æ` = `;da`
+* `œ` = `;de`
 
 ### Portuguese / Português
 
@@ -36,6 +38,65 @@ This layout behaves like QWERTY when typing shortcuts. Ie, your usual shortcuts 
 
 * `ő` = `;f`
 * `ű` = `;w` (both qwerty and colemak)
+
+### Norwegian / Norsk
+
+* `ø` = `;do`
+* `å` = `;dr`
+
+### Dutch / Nederlands
+
+* `ĳ` = `;dj`
+
+### Turkish / Türkçe
+
+* `ğ` = `;hg`
+* `ç` = `;c`
+* `ş` = `;zs`
+* `ı` = `;di`
+* `İ` = `;dI`
+
+### Slovenian / Slovenščina
+
+* `ž` = `;hz`
+* `č` = `;hc`
+* `š` = `;hs`
+
+### Croatian / Hrvatski
+
+* `ć` = `;/c`
+* `đ` = `;dd`
+
+### Czech / Čeština
+
+* `ď` = `;hd`
+* `Ď` = `;hD`
+* `ň` = `;hn`
+* `ť` = `;ht`
+* `ř` = `;hr`
+
+### Slovak / Slovenčina
+
+* `ľ` = `;hl`
+
+### Polish / Polski
+
+* `ą` = `;za`
+* `ę` = `;ze`
+* `ł` = `;dl`
+* `ż` = `;dz`
+* `ń` = `;/n`
+* `ś` = `;/s`
+* `ź` = `;/z`
+
+### Pinyin
+
+* `ǎ` = `;ha`
+* `ǚ` = `;hv`
+* `ā` = `;ma`
+* `ǖ` = `;mv`
+* `ǘ` = `;/v`
+* `ǜ` = `;tv`
 
 ### Punctuation, non-accented characters, uppercase, colemak
 
